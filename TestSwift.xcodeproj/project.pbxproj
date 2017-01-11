@@ -22,6 +22,8 @@
 		6A7DF7EB1E26175C0083039C /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF7EA1E26175C0083039C /* UserActions.swift */; };
 		6A7DF7ED1E2617C80083039C /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF7EC1E2617C80083039C /* Events.swift */; };
 		6A7DF7EF1E261E980083039C /* Outlets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF7EE1E261E980083039C /* Outlets.swift */; };
+		6A7DF7F11E263D800083039C /* TestSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF7F01E263D800083039C /* TestSwiftApp.swift */; };
+		6A7DF7F81E26409F0083039C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7DF7F71E26409F0083039C /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		6A7DF7EA1E26175C0083039C /* UserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
 		6A7DF7EC1E2617C80083039C /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		6A7DF7EE1E261E980083039C /* Outlets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Outlets.swift; sourceTree = "<group>"; };
+		6A7DF7F01E263D800083039C /* TestSwiftApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwiftApp.swift; sourceTree = "<group>"; };
+		6A7DF7F71E26409F0083039C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		6A72200D1E1E278800CBEF85 /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6A7DF7F21E263EA40083039C /* API */,
 				6A7DF7E71E2613680083039C /* SharedProtocols */,
 				6A7DF7DF1E2606C70083039C /* Core */,
 				6A7DF7DB1E2606450083039C /* ViewControllers */,
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7DF7E01E2606CF0083039C /* Base Classes */,
+				6A7DF7F01E263D800083039C /* TestSwiftApp.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -187,6 +193,14 @@
 				6A7DF7EE1E261E980083039C /* Outlets.swift */,
 			);
 			name = SharedProtocols;
+			sourceTree = "<group>";
+		};
+		6A7DF7F21E263EA40083039C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6A7DF7F71E26409F0083039C /* Reachability.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +339,9 @@
 			files = (
 				6A7DF7E61E26126B0083039C /* BaseModule.swift in Sources */,
 				6A7DF7E21E2607060083039C /* BaseViewController.swift in Sources */,
+				6A7DF7F81E26409F0083039C /* Reachability.swift in Sources */,
 				6A7220111E1E278900CBEF85 /* ViewController.swift in Sources */,
+				6A7DF7F11E263D800083039C /* TestSwiftApp.swift in Sources */,
 				6A72200F1E1E278800CBEF85 /* AppDelegate.swift in Sources */,
 				6A7DF7EF1E261E980083039C /* Outlets.swift in Sources */,
 				6A7DF7EB1E26175C0083039C /* UserActions.swift in Sources */,

@@ -17,3 +17,9 @@ import UIKit
     @objc optional func didDisappear()
     @objc optional func memoryWarning()
 }
+
+@objc protocol ReachabilityEvents {
+    @objc optional func reachableViaWifi()
+    @objc optional func reachableViaCellular()
+    @objc optional func unreachable()
+}
