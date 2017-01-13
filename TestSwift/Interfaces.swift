@@ -25,3 +25,8 @@ enum ModuleIdentity : Int {
     func getModule(identity: Int) -> Module
     
 }
+
+@objc protocol Navigation {
+    @objc optional func loadView(info: [String : AnyObject]?)
+    @objc optional func dismissView(info: [String : AnyObject]?)
+}

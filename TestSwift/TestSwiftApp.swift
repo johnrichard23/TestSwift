@@ -21,4 +21,10 @@ class TestSwiftApp: NSObject, App, ViewControllerLifeCycle, ReachabilityEvents {
         }
     }
 */
+    
+    override init() {
+        super.init()
+        
+     //   let splashScreen = SplashScreenModule(vcI)
+    }
 }

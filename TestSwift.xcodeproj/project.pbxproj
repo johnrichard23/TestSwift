@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A6D4C5D1E2738770008FB99 /* SplashScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D4C5C1E2738770008FB99 /* SplashScreenModule.swift */; };
+		6A6D4C5F1E2749CF0008FB99 /* BoundaryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D4C5E1E2749CF0008FB99 /* BoundaryProtocols.swift */; };
+		6A6D4C631E27564C0008FB99 /* SplashScreenViewBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D4C621E27564C0008FB99 /* SplashScreenViewBoundary.swift */; };
+		6A6D4C651E275D8B0008FB99 /* InteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D4C641E275D8B0008FB99 /* InteractorProtocols.swift */; };
 		6A72200F1E1E278800CBEF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A72200E1E1E278800CBEF85 /* AppDelegate.swift */; };
 		6A7220111E1E278900CBEF85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7220101E1E278900CBEF85 /* ViewController.swift */; };
 		6A7220141E1E278B00CBEF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7220121E1E278B00CBEF85 /* Main.storyboard */; };
@@ -44,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A6D4C5C1E2738770008FB99 /* SplashScreenModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenModule.swift; sourceTree = "<group>"; };
+		6A6D4C5E1E2749CF0008FB99 /* BoundaryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundaryProtocols.swift; sourceTree = "<group>"; };
+		6A6D4C611E274C560008FB99 /* TestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A6D4C621E27564C0008FB99 /* SplashScreenViewBoundary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewBoundary.swift; sourceTree = "<group>"; };
+		6A6D4C641E275D8B0008FB99 /* InteractorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorProtocols.swift; sourceTree = "<group>"; };
 		6A72200B1E1E278800CBEF85 /* TestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A72200E1E1E278800CBEF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A7220101E1E278900CBEF85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A6D4C5B1E2738520008FB99 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6A6D4C5C1E2738770008FB99 /* SplashScreenModule.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
 		6A7220021E1E278700CBEF85 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +145,7 @@
 				6A72201A1E1E278C00CBEF85 /* LaunchScreen.storyboard */,
 				6A72201D1E1E278C00CBEF85 /* Info.plist */,
 				6A7220151E1E278B00CBEF85 /* TestSwift.xcdatamodeld */,
+				6A6D4C611E274C560008FB99 /* TestSwift-Bridging-Header.h */,
 			);
 			path = TestSwift;
 			sourceTree = "<group>";
@@ -162,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7DF7E31E2607190083039C /* SplashViewController.swift */,
+				6A6D4C621E27564C0008FB99 /* SplashScreenViewBoundary.swift */,
 			);
 			name = Splash;
 			sourceTree = "<group>";
@@ -169,6 +188,7 @@
 		6A7DF7DF1E2606C70083039C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				6A6D4C5B1E2738520008FB99 /* Modules */,
 				6A7DF7E01E2606CF0083039C /* Base Classes */,
 				6A7DF7F01E263D800083039C /* TestSwiftApp.swift */,
 			);
@@ -191,6 +211,8 @@
 				6A7DF7EA1E26175C0083039C /* UserActions.swift */,
 				6A7DF7EC1E2617C80083039C /* Events.swift */,
 				6A7DF7EE1E261E980083039C /* Outlets.swift */,
+				6A6D4C5E1E2749CF0008FB99 /* BoundaryProtocols.swift */,
+				6A6D4C641E275D8B0008FB99 /* InteractorProtocols.swift */,
 			);
 			name = SharedProtocols;
 			sourceTree = "<group>";
@@ -337,10 +359,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6D4C5D1E2738770008FB99 /* SplashScreenModule.swift in Sources */,
 				6A7DF7E61E26126B0083039C /* BaseModule.swift in Sources */,
 				6A7DF7E21E2607060083039C /* BaseViewController.swift in Sources */,
+				6A6D4C631E27564C0008FB99 /* SplashScreenViewBoundary.swift in Sources */,
+				6A6D4C651E275D8B0008FB99 /* InteractorProtocols.swift in Sources */,
 				6A7DF7F81E26409F0083039C /* Reachability.swift in Sources */,
 				6A7220111E1E278900CBEF85 /* ViewController.swift in Sources */,
+				6A6D4C5F1E2749CF0008FB99 /* BoundaryProtocols.swift in Sources */,
 				6A7DF7F11E263D800083039C /* TestSwiftApp.swift in Sources */,
 				6A72200F1E1E278800CBEF85 /* AppDelegate.swift in Sources */,
 				6A7DF7EF1E261E980083039C /* Outlets.swift in Sources */,
@@ -502,6 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wylog.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -514,6 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wylog.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
