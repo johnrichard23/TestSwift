@@ -30,3 +30,9 @@ enum ModuleIdentity : Int {
     @objc optional func loadView(info: [String : AnyObject]?)
     @objc optional func dismissView(info: [String : AnyObject]?)
 }
+
+@objc protocol ViewStates {
+    @objc optional func defaultState()
+    @objc optional func transactionError()
+    @objc optional func networkError()
+}

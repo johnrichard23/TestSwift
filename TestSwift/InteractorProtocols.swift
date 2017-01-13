@@ -18,3 +18,4 @@ import CoreData
 @objc protocol Interactor {
     var boundary : Boundary? {get set}
 }
+

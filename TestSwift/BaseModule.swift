@@ -27,6 +27,7 @@ class BaseModule: NSObject, Module {
     
     func getModule(identity: Int) -> Module {
         if moduleIdentity?.rawValue == identity {
+            
             return self
         }
         else {
