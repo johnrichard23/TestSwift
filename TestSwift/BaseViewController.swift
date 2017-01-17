@@ -25,7 +25,7 @@ class BaseViewController: UIViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.tabBarController?.tabBar.isTranslucent = false
         
-
+        
         
     }
 

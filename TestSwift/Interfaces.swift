@@ -12,6 +12,19 @@ enum ModuleIdentity : Int {
     case SplashScreenModule = 0
 }
 
+enum ActionType : Int {
+    case Tap = 0
+}
+
+enum EventType : Int {
+    case ViewDidLoad = 0
+    case ViewWillAppear = 1
+    case ViewDidAppear = 2
+    case ViewWillDisappear = 3
+    case ViewDidDisappear = 4
+    case MemoryWarning = 5
+}
+
 @objc protocol App {
     var sharedData : AnyObject? {get set}
 }
