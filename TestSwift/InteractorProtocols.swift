@@ -19,3 +19,9 @@ import CoreData
     var boundary : Boundary? {get set}
 }
 
+protocol IRegistrationLoader : Interactor {
+    
+    func checkUpdateNeeded(funcParam: (_ updateIsNeeded : Bool) -> ())
+    func loadRegistration(funcParam: () -> (), error: (_ error: NSError?) -> ())
+}
+
